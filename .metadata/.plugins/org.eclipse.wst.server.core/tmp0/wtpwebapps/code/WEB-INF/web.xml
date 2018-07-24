@@ -13,19 +13,16 @@
     <param-name>Part3</param-name>
     <param-value>Database</param-value>
   </context-param>
+  <listener>
+    <listener-class>code.listener.L312</listener-class>
+  </listener>
   <filter>
     <filter-name>F211</filter-name>
     <filter-class>code.filter.F211</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>F211</filter-name>
-    <url-pattern>/S221</url-pattern>
-    <url-pattern>/S222</url-pattern>
-    <url-pattern>/S223</url-pattern>
-    <url-pattern>/S211</url-pattern>
-    <url-pattern>/S212</url-pattern>
-    <url-pattern>/j211.jsp</url-pattern>
-    <url-pattern>/j212.jsp</url-pattern>
+    <url-pattern>/*</url-pattern>
   </filter-mapping>
   <servlet>
     <servlet-name>S212</servlet-name>

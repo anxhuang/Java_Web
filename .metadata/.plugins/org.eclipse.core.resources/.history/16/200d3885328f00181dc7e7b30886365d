@@ -1,0 +1,48 @@
+package code.servlet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class S311
+ */
+@WebServlet(urlPatterns={"/S311"},initParams={
+		@WebInitParam(name="803",value="Java 7 OCA助理"),//2018.12.31
+		@WebInitParam(name="804",value="Java 7 OCP程式"),//2018.12.31
+		@WebInitParam(name="808",value="Java 7 OCA助理"),
+		@WebInitParam(name="809",value="Java 7 OCP程式"),
+		@WebInitParam(name="899",value="Java 6 OCW網頁")
+})
+public class S311 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public S311() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

@@ -13,7 +13,7 @@
 <body>
 
 	<div align="center">
-		<font size="36" color="blue">Java Web</font> &nbsp; &nbsp; <a href="index.html">Home</a><br>
+		<font size="36" color="blue">Java Web</font> &nbsp; &nbsp; <a href="index.jsp">Home</a><br>
 		<hr width="80%" color="orange" size="5"><br>
 	</div>
 <!-- 	

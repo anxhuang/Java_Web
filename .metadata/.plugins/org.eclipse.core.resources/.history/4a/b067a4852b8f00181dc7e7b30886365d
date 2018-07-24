@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Insert title here</title>
+<style>
+	body{
+		font-size: 0.25in;
+		font-family: Arial;
+		background: linear-gradient(#369, #222);;
+		/*background-image: url("https://fsa.zobj.net/crop.php?r=ao88GxCisk4oY2NINS9REEtIWhpZOc22-qItDMLD3PM32O_JkS6wNJkg6nyYIREcmC0vWqaqI6LJaUOxd-WXbPJcJwdQ8BFboZ63vqok2a4Dr1BmLINjzf1ENB44EzZlDTbMtV754atZi7iy");*/
+		/*background-size: cover;*/
+	}
+	h1{
+		color: #FFF;
+		text-shadow: 0px 2px 5px #000;
+		text-align: center;
+	}
+	orange{
+		color: #F80;
+		font-size: 0.5in;
+		margin-right: 0.25in;
+	}
+	table{		
+		width: 80%;
+		margin: 0 auto;
+		border-spacing: 0.15in;
+	}
+	td{
+		color: #FFF;
+		text-shadow: 0px 0px 3px #000;
+		padding: 0.1in;		
+		background: rgba(255,255,255,0.30);		
+		box-shadow: 0px 2px 10px #000;
+		border-radius: 3px;
+	}
+	td:first-child{
+		width: 20%;
+	}
+	td:nth-child(2){
+		width: 40%;
+	}
+	td:nth-child(3){
+		width: 40%;
+	}
+	a:link		{color: #47F;}
+	a:visited	{color: #47F;}
+</style>
+</head>
+<body>
+	
+	<h1>Java Web Code</h1>
+	
+	<table>
+		<tbody>
+			<tr>
+				<td>2018/7/12~9/4</td>
+				<td colspan="2">
+					1, Servlet*, JSP*<br>
+					2, ServletContext, Filter, Expression Language(EL)<br>
+					3, Request, Response, Annotation, JSTL<br>
+					4, RequestDispatcher, JavaBean<br>
+					5, Session, Cookie, Tomcat, TLD<br>
+					6, Asynchronous Request, TLD<br>
+					7, Listener<br>
+					8, Deployment, Security<br>
+					0, Database
+				</td>
+			</tr>
+			<tr>
+				<td><orange>9</orange> 9/4</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><orange>8</orange> 8/28, 8/30</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><orange>7</orange> 8/21, 8/23</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><orange>6</orange> 8/14, 8/16</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><orange>5</orange> 8/7, 8/9</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><orange>4</orange> 7/31, 8/2</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><orange>3</orange> 7/24, 7/26</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><orange>2</orange> 7/17, 7/19</td>
+				<td>
+					<font color="#F40">No trigger, Listener/Filter(F211)</font>
+					<br>
+					Servlet:
+					<a href="S211">S211</a>,
+					<a href="S212">S212</a>
+					<br>
+					EL:
+					<a href="j211.jsp">j211</a>,
+					<a href="j212.jsp">j212</a>
+					<br>
+					JSP:
+					<a href="j213.jsp">j213</a>					
+				</td>
+				<td>
+					Servlet:
+					<a href="S221">S221</a>,
+					S222,
+					S223,
+					<br>
+					JSP:
+					<a href="j221.jsp">j221</a>,
+					<a href="j222.jsp">j222</a>
+					<br>
+					EL:
+					<a href="j223.jsp">j223</a>	
+				</td>
+			</tr>
+			<tr>
+				<td><orange>1</orange> 7/14</td>
+				<td></td>
+				<td>
+					Servlet:
+					<a href="S121">S121</a>,
+					<br>
+					JSP:
+					<a href="j121.jsp">j121</a>,
+					<a href="j122.jsp">j122</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
