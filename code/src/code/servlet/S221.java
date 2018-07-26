@@ -37,7 +37,7 @@ public class S221 extends HttpServlet {
 		rd.include(request, response);
 		//
 		PrintWriter out=response.getWriter();
-		out.println("<center><div style='width: 80%; height: 250px; margin-right: 250px'>");
+		out.println("<center><div>");
 		out.println("<h2>Servlet/RequestDispatcher, S221</h2><h3>");
 		Random	r=new Random();
 		int		n=r.nextInt(9)+1;

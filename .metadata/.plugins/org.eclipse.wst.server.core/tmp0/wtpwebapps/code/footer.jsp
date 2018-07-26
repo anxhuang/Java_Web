@@ -6,7 +6,6 @@
 <style>
 	div{
 		width: 80%;
-		margin-left: 130px;
 	}
 </style>
 </head>

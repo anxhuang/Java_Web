@@ -38,7 +38,7 @@ public class S222 extends HttpServlet {
 		PrintWriter	out=response.getWriter();
 		String	id=request.getParameter("id");
 		String	pw=request.getParameter("password");
-		out.println("<center><div style='width: 80%; height: 250px; margin-right: 250px;'>");
+		out.println("<center><div>");
 		out.println("<h2>JSP/Servlet , S222</h2><h3>");
 		if( id.equals("jsp") && pw.equals("1234") ){
 			out.println("<img src='/code/welcome.png'>");

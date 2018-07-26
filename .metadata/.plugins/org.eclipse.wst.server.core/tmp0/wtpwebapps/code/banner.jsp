@@ -6,7 +6,7 @@
 <style>
 	div{
 		width: 80%;
-		margin-left: 130px;
+		margin: 0 auto;
 	}
 </style>
 </head>

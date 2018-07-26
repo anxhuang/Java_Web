@@ -41,7 +41,7 @@ public class S223 extends HttpServlet {
 		String	gender=request.getParameter("gender");
 		String	fruit=request.getParameter("fruit");
 		String	drink=request.getParameter("drink");
-		out.println("<center><div style='width: 80%; height: 250px; margin-right: 250px;'>");
+		out.println("<center><div>");
 		out.println("<h2>JSP/Servlet , S223</h2><h3><font color='orange'>");
 		out.println("©m¦W: "+user+"<br>");
 		out.println("©Ê§O: "+gender+"<br>");

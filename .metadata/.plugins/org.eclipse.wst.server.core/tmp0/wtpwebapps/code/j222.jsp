@@ -4,13 +4,6 @@
 <head>
 
 <title>Insert title here</title>
-<style type="text/css">
-	div{
-		width: 80%;
-		height: 250px;
-		margin-right: 130px;
-	}
-</style>
 </head>
 <body>
 
