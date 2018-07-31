@@ -1,0 +1,76 @@
+package code.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class S412
+ */
+@WebServlet("/S412")
+public class S412 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public S412() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		PrintWriter	out=response.getWriter();
+		RequestDispatcher	rd=request.getRequestDispatcher("/banner.jsp");
+		rd.include(request, response);
+		//
+		out.println("<center><div>");
+		out.println("<h2>Servlet/Request, S412</h2><h3><table><font color='blue'><tr><td>ServerInfo:</td></tr>");
+		String	requestURL=request.getRequestURL().toString(); //URL return "http://localhost:8080/code/S412"
+		String	requestURI=request.getRequestURI();			  //URI return "/code/S412"	
+		out.println("<tr><td>getRequestURL(): </td><td>"+requestURL+"</td></tr>");
+		out.println("<tr><td>getRequestURI(): </td><td>"+requestURI+"</td></tr>");
+		String	contextPath=request.getContextPath();			//ContextPath return "/code"
+		String	servletPath=request.getServletPath();			//ServletPath return "/S412"
+		out.println("<tr><td>getContextPath(): </td><td>"+contextPath+"</td></tr>");
+		out.println("<tr><td>getServletPath(): </td><td>"+servletPath+"</td></tr>");
+		String	serverName=request.getServerName();				//ServerName return "localhost"
+		int		serverPort=request.getServerPort();				//ServerPort return "8080"
+		out.println("<tr><td>getServerName(): </td><td>"+serverName+"</td></tr>");
+		out.println("<tr><td>getServerPort(): </td><td>"+serverPort+"</td></tr></font>");
+		out.println("<font color='red'><tr><td>ClientInfo:</td></tr>");
+		String	remoteAddr=request.getRemoteAddr();				//RemoteAddr return client's Address
+		String	remoteHost=request.getRemoteHost();				//RemoteAddr return client's Host
+		int		remotePort=request.getRemotePort();				//RemoteAddr return client's Port
+		String	remoteUser=request.getRemoteUser();				//RemoteAddr return client's Username
+		out.println("<tr><td>getRemoteAddr(): </td><td>"+remoteAddr+"</td></tr>");
+		out.println("<tr><td>getRemoteHost(): </td><td>"+remoteHost+"</td></tr>");
+		out.println("<tr><td>getRemotePort(): </td><td>"+remotePort+"</td></tr>");
+		out.println("<tr><td>getRemoteUser(): </td><td>"+remoteUser+"</td></tr>");
+		out.println("</table></font></h3></div></center>");
+		//
+		rd=request.getRequestDispatcher("/footer.jsp");
+		rd.include(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

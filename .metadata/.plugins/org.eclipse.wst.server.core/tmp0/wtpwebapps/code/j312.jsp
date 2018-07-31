@@ -11,7 +11,7 @@
 	<%@ include file="banner.jsp" %>
 	
 	<div align="center" id="div1">
-		<h2>JSP/EL, j32.jsp</h2>
+		<h2>JSP/EL, j312.jsp</h2>
 		<img src="JSP.bmp"><br><h3><font color="blue">
 		
 		<form action="j313.jsp">

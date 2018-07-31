@@ -1,0 +1,20 @@
+package code.util;
+
+public class Fruit {
+	
+	//instance variables
+	private String title;
+	
+	public Fruit(){
+		
+	}
+	
+	public void setTitle(String title){ //local variables
+		this.title = title;
+	}
+	
+	public String getTitle(){
+		return this.title;
+	}
+
+}
