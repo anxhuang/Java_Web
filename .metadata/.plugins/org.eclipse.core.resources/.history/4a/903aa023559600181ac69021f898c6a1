@@ -1,0 +1,85 @@
+package code.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Date;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+/**
+ * Servlet implementation class S423
+ */
+@WebServlet("/S422")
+public class S422 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public S422() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		RequestDispatcher	rd=request.getRequestDispatcher("/banner.jsp");
+		rd.include(request, response);
+		PrintWriter	out=response.getWriter();
+		//
+		out.println("<center><div>");
+		out.println("<h2>JSP/Servlet/Session, S422</h2><h3><font color='blue'>");
+		//1. request.getSession();			return current session
+		//2. request.getSession(true);		if no session, create new session
+		//3. request.getSession(false);		if no session, return false
+		HttpSession	session=request.getSession();
+		out.println("Session .isNew(): "+session.isNew()+"<br>");
+		out.println("Session .getID(): "+session.getId()+"<br><br>");
+		session.invalidate(); // force destroy session
+		session=request.getSession(true);
+		out.println("Session .isNew(): "+session.isNew()+"<br>");
+		out.println("Session .getID(): "+session.getId()+"<br><br>");
+		long	t1=session.getCreationTime();
+		long	t2=session.getLastAccessedTime();
+		out.println("Session .getCreationTime(): "+(new Date(t1))+"<br>");
+		out.println("Session .getLastAccessedTime(): "+(new Date(t2))+"<br><br>");
+		out.println("Session Duration time: "+(t2-t1)+"<br><br>");
+		//counter example
+		int counter=1;
+		String	s=null;
+		try{
+			s=session.getAttribute("counter").toString();
+		}catch(Exception e){/* do catch if need */}
+		if(s != null){
+			counter=Integer.parseInt(s);
+			counter++;
+		}
+		session.setAttribute("counter", counter);
+		out.println("counter: "+counter+"<br><br>");
+		//
+		out.println("</h3></font></div></center>");
+		//
+		rd=request.getRequestDispatcher("/footer.jsp");
+		rd.include(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

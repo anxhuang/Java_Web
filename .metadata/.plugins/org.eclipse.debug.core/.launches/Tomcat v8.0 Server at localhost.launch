@@ -8,6 +8,6 @@
 <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
 <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="start"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcatalina.base=&quot;C:\LJ10_48_20180712\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0&quot; -Dcatalina.home=&quot;C:\LJ10_48_20180712\apache-tomcat-8.0.8&quot; -Dwtp.deploy=&quot;C:\LJ10_48_20180712\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps&quot; -Djava.endorsed.dirs=&quot;C:\LJ10_48_20180712\apache-tomcat-8.0.8\endorsed&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcatalina.base=&quot;C:\LJ10_48_20180712\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0&quot; -Dcatalina.home=&quot;C:\LJ10_48_20180712\apache-tomcat-8.0.8&quot; -Dwtp.deploy=&quot;C:\LJ10_48_20180712\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps&quot; -Djava.endorsed.dirs=&quot;C:\LJ10_48_20180712\apache-tomcat-8.0.8\endorsed&quot; -Djava.security.manager -Djava.security.policy=&quot;C:\LJ10_48_20180712\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\conf\catalina.policy&quot; -Dwtp.configured.security=true"/>
 <stringAttribute key="server-id" value="Tomcat v8.0 Server at localhost"/>
 </launchConfiguration>
