@@ -66,5 +66,5 @@ j425: \<form> JavaBean(Meat.java) -> fine for set String but throws Exception fo
 ### Use Notepad to build all files in Tomcat's folder  
 web.xml: \<welcome-file-list>, \<filter>, \<context-param>  
 L511: default filter for Context Web  
-S11: import annotation for @WebServlet("/CLASS"), getServletContext().getInitParameter("key")  
+S511: import annotation for @WebServlet("/CLASS"), getServletContext().getInitParameter("key")  
 j511: JSP Document: \<jsp:directive>, \<jsp:declaration>, \<jsp:expression>, \<jsp:scriptlet>, \<!-- comment -->
