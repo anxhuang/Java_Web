@@ -52,7 +52,7 @@ S411: request.setServletContext(), setAttribute("key","val") trigger Listener ->
 L411: S411 -> ServletContextListener, return changes to attributes  
 S412: Request, getRequestURI(), -URL(), -ContextPath(), -ServletPath(), -Name(), -Port(), -RemoteAddr(), -Host(), -Port(), -User()  
 
-## 8/1
+## 8/2
 j421: \<form> radio, checkbox -> S412  
 S412: j412.jsp -> request.getParameterValues("checkbox_name") in array and output by for(i:arr){}  
 j422: JSP basic review and   <jsp-config>, <jsp-property-group>, <url-pattern> + <scripting-invalid> true => throws Exception  
@@ -61,3 +61,6 @@ S422: request.getSession(true) to create session, .isNew(), .getId(), .getCreati
 S423: request.getSession().invalidate() to destroy session  
 j424: \<form> radio -> j425.jsp  
 j425: \<form> JavaBean(Meat.java) -> fine for set String but throws Exception for Boolean  
+
+## 8/7
+
