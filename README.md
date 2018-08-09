@@ -68,3 +68,12 @@ web.xml: \<welcome-file-list>, \<filter>, \<context-param>
 L511: default filter for Context Web  
 S511: import annotation for @WebServlet("/CLASS"), getServletContext().getInitParameter("key")  
 j511: JSP Document: \<jsp:directive>, \<jsp:declaration>, \<jsp:expression>, \<jsp:scriptlet>, \<!-- comment -->
+
+## 8/9
+j521: \<form> login info -> S521  
+S521: \<form> j521 -> Cookie("key","val"), setMaxAge(secs), response.addCookie(cookie)  
+S522: \<form> S521, request.getRequestDispatcher("/S522").forward(request, response) -> S522  
+S523: request.getCookies(), .getName(), getValue()  
+j522: tags, \<tag: filename key="val"> -> filename.tag: \<%＠ attribute name="key" %>, ${val}  
+j523: JSTL, \<sql:setDataSource>, \<c:forEach>, same as j411  
+
