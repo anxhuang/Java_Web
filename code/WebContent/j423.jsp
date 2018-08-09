@@ -15,7 +15,7 @@
 		<img alt="" src="JSP.bmp"><br><br><h3><font color="blue">
 		
 		<a href="S422">Create New Session</a><br><br>
-		<a href="S423">Destory Current Session</a>
+		<a href="S423">Destroy Current Session</a>
 		
 	</h3></font></div>
 	

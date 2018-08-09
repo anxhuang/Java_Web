@@ -11,7 +11,7 @@
 	<%@ include file="banner.jsp" %>
 	
 	<div align="center" id="div1">
-		<h2>JSP/EL, j33.jsp</h2>
+		<h2>JSP/EL, j313.jsp</h2>
 		<img src="JSP.bmp"><br><h3><font color="red">
 		
 			7*24=${7*24 }<br><br>
