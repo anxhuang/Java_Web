@@ -77,3 +77,11 @@ S523: request.getCookies(), .getName(), getValue()
 j522: tags, \<tag: filename key="val"> -> filename.tag: \<%＠ attribute name="key" %>, ${val}  
 j523: JSTL, \<sql:setDataSource>, \<c:forEach>, same as j411  
 
+## 8/14
+j611: \<form> File upload -> S611
+S611: \<form> j611 -> ＠MultipartConfig() or web.xml, File.separator, File io, Part.getHeader(), .split(), .trim(), .startsWith(), .indexOf(), .length(), -> j612  
+j612: \<form> S611 -> show file upload result  
+j613: tags, required="true", pageEncoding="UTF-8", \<jsp:doBody/>, body-content="scriptless"  
+L611: Listener, HttpSessionBindingListener -> S612  
+S612: L611 -> see Tomcat log console  
+
