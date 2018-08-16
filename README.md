@@ -85,3 +85,11 @@ j613: tags, required="true", pageEncoding="UTF-8", \<jsp:doBody/>, body-content=
 L611: Listener, HttpSessionBindingListener -> S612  
 S612: L611 -> see Tomcat log console  
 
+## 8/16
+tld621: tags, TLD, add two doubles, number format -> add.tld, nf.tld -> Tld621,Tld622  
+Tld621: add.tld -> Tld621 -> tld621.jsp  
+Tld622: nf.tld -> Tld622 -> tld621.jsp  
+S621: Calendar, .getInstance(), response.setIntHeader("refresh",sec), \<select>  
+S622: Header, Enumeration, request.getHeaderNames(), .getHeader()  
+S623: Asynchronous, AsyncContext, ExecutorService, Executors, asyncSupported=true, org.apache.catalina.ASYNC_SUPPORTED, .submit(), destroy(), .shutdown() -> A623  
+A623: S623 -> Thread, Runnable, .sleep(sec), .complete()  
