@@ -93,3 +93,11 @@ S621: Calendar, .getInstance(), response.setIntHeader("refresh",sec), \<select>
 S622: Header, Enumeration, request.getHeaderNames(), .getHeader()  
 S623: Asynchronous, AsyncContext, ExecutorService, Executors, asyncSupported=true, org.apache.catalina.ASYNC_SUPPORTED, .submit(), destroy(), .shutdown() -> A623  
 A623: S623 -> Thread, Runnable, .sleep(sec), .complete()  
+
+## 8/21
+### Security Login
+folder "s": conf/tomcat-users.xml, web.xml  \<form-login-config>, \<form-login-page>, \<form-error-page>  
+login.jsp: \<form> login page, action="j_security_check", name="j_username", password="j_password" 
+error.jsp: nothing special  
+S711: ServletContext Parameter  
+
