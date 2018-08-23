@@ -101,3 +101,11 @@ login.jsp: \<form> login page, action="j_security_check", name="j_username", pas
 error.jsp: nothing special  
 S711: ServletContext Parameter  
 
+## 8/23
+j721: \<form> locale code for ResourceBundle -> S721  
+S721: \<form> j721 -> read ResourceBundle by GET (need study to solved UTF-8)  
+S722: synchronized Session  
+S723: Session Listener (no work?)  
+S724: System Parameters  
+j722: JSP Documents  
+
