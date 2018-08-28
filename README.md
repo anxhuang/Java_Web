@@ -109,3 +109,13 @@ S723: Session Listener (no work?)
 S724: System Parameters  
 j722: JSP Documents  
 
+## 8/29
+S812: WebInitParam(name="P" value="/path"), getServletContext().getResourcePaths(P) auto load file names in folder  
+S813: Do the same thing but through web.xml  
+F811: UTF-8 Filter  
+F812: counter Filter  
+j811: show row values in MySQL "memo/t_memo"  
+j812: \<form> input field for "memo" -> S811  
+j813: \<c:forEach varStatus="s"> s.index returns the array-index  
+
+
