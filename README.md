@@ -109,13 +109,18 @@ S723: Session Listener (no work?)
 S724: System Parameters  
 j722: JSP Documents  
 
-## 8/29
+## 8/28
 S812: WebInitParam(name="P" value="/path"), getServletContext().getResourcePaths(P) auto load file names in folder  
 S813: Do the same thing but through web.xml  
-F811: UTF-8 Filter  
+F811: UTF-8 Filter, request.setCharacterEncoding("UTF-8"), response.setContentType("text/html; charset=UTF-8")  
 F812: counter Filter  
 j811: show row values in MySQL "memo/t_memo"  
 j812: \<form> input field for "memo" -> S811  
 j813: \<c:forEach varStatus="s"> s.index returns the array-index  
 
+## 8/30
+S811: \<form> j812 -> INSERT MySQL -> j811  
+j821: \<form> select meal -> MealType:enum, MealSelect:class, S821 -> j822  
+j822: \<form> show store list for MealType, List, Iterator  
+j823: \<c:set var="varName" value="val">, request.setAttribute("exceptionName", new Exception("")), \<c:catch var="exceptionName">...\</c:catch> ${exceptionName.message}  
 
