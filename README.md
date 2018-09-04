@@ -124,3 +124,13 @@ j821: \<form> select meal -> MealType:enum, MealSelect:class, S821 -> j822
 j822: \<form> show store list for MealType, List, Iterator  
 j823: \<c:set var="varName" value="val">, request.setAttribute("exceptionName", new Exception("")), \<c:catch var="exceptionName">...\</c:catch> ${exceptionName.message}  
 
+## 9/4
+j911: empty, pageContext, \<jsp:include page="*.jsp">  
+S911: request.getHeaderNames();  
+j912: \<form> Java Bean -> Product.java (class)  
+j913: \<form>Product.java (class) -> j913  
+S912: response.addHeader(), response.setHeader(), request.getHeader(), request.getIntHeader()  
+j914: \<iframe src="S913">, \<iframe src="S914">  
+S913: top-half of S621  
+S914: bottom-half of S621  
+
