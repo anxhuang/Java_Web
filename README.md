@@ -80,7 +80,7 @@
 **j523:** JSTL, \<sql:setDataSource>, \<c:forEach>, same as j411  
 
 ## 8/14
-**j611:** \<form> File upload -> S611
+**j611:** \<form> File upload -> S611  
 **S611:** \<form> j611 -> ＠MultipartConfig() or web.xml, File.separator, File io, Part.getHeader(), .split(), .trim(), .startsWith(), .indexOf(), .length(), -> j612  
 **j612:** \<form> S611 -> show file upload result  
 **j613:** tags, required="true", pageEncoding="UTF-8", \<jsp:doBody/>, body-content="scriptless"  
@@ -100,7 +100,7 @@
 > Security Login  
 **folder "s":** conf/tomcat-users.xml, web.xml  \<form-login-config>, \<form-login-page>, \<form-error-page>  
 
-**login.jsp:** \<form> login page, action="j_security_check", name="j_username", password="j_password" 
+**login.jsp:** \<form> login page, action="j_security_check", name="j_username", password="j_password"  
 **error.jsp:** nothing special  
 **S711:** ServletContext Parameter  
 
