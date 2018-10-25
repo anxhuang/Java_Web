@@ -34,10 +34,10 @@
 **j313:** \<form> j312.jsp -> use request.getParameter() in scriplet and output by out.print() or by EL param.var, \<%＠ page isELIgnored="true"%>  
 **L311:** ServletContextListener, Liftcycle and setting \<listener> \<listener-class> in web.xml  
 **L312:** ServletRequestListener, Liftcycle for request triggered only  
-**MySQL:** Installation, SHOW DATABASES;  
+> **MySQL:** Installation, SHOW DATABASES;  
 
 ## 7/26
-> MySQL: CREATE sample DB,TABLE by txt file. USE database, SELECT * FROM table  
+> **MySQL:** CREATE sample DB,TABLE by txt file. USE database, SELECT * FROM table  
 
 **S321:** class.forName("com.mysql.jdbc.Driver"), try{Connection, Satement and ResultSet}catch(Exception e) to read MySQL table rows  
 **j321:** \<form> table insert page -> S322  
@@ -65,7 +65,7 @@
 
 ## 8/7
 > Use Notepad to build all files in Tomcat's folder  
-web.xml: \<welcome-file-list>, \<filter>, \<context-param>  
+**web.xml:** \<welcome-file-list>, \<filter>, \<context-param>  
 
 **L511:** default filter for Context Web  
 **S511:** import annotation for @WebServlet("/CLASS"), getServletContext().getInitParameter("key")  
@@ -98,7 +98,7 @@ web.xml: \<welcome-file-list>, \<filter>, \<context-param>
 
 ## 8/21
 > Security Login  
-folder "s": conf/tomcat-users.xml, web.xml  \<form-login-config>, \<form-login-page>, \<form-error-page>  
+**folder "s":** conf/tomcat-users.xml, web.xml  \<form-login-config>, \<form-login-page>, \<form-error-page>  
 
 **login.jsp:** \<form> login page, action="j_security_check", name="j_username", password="j_password" 
 **error.jsp:** nothing special  
